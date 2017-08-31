@@ -1,0 +1,236 @@
+footer div, footer div p a{
+  color:#fff;
+  text-align:center;
+  font-size: 22px;
+  font-weight:700;
+  font-family:'Open sans';
+  text-shadow: 0 3px 5px rgba(0,0,0,0.6);
+}
+footer div{
+  height:20px;
+}
+
+
+html {
+  min-width: 320px;
+}
+
+body {
+  background: #9b59b6;
+}
+
+img {
+  width: 200px;
+}
+.theIMG {
+  margin-top: 5px;
+}
+span {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.popular {
+  color: #fff;
+  margin-left: 10px;
+  text-shadow: 0 3px 5px #2c3e50;
+  font-size: 32px;
+}
+
+.myTitle {
+  font-size: 25px;
+  text-decoration: none !important;
+  float: left;
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.logo {
+  width: 65px;
+  border-radius: 50%;
+}
+/* overflow */
+.name {
+  margin-left: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100px;
+  display: inline-block;
+  overflow: hidden;
+}
+/*Have to seperate them for it to work*/
+.display a {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+
+.status {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* .... */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto 80%;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  background: #7f8c8d;
+  padding-left: 0;
+}
+
+.wrapper > div {
+  background: #eee;
+  padding: 1em;
+  border-radius: 20px;
+}
+.wrapper > div:nth-child(odd) {
+  background: none;
+}
+
+.mainWrap {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-column-gap: 1em;
+  margin-bottom: 1em;
+}
+
+#theButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  align-items: center;
+  margin-top: 10px;
+  margin: auto;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  .theIMG {
+    width: 150px;
+  }
+  .name {
+    display: block;
+    width: 80px;
+  }
+
+  .wrapper {
+    grid-template-columns: 30% 70%;
+  }
+
+  .wrapper > div:nth-child(odd) {
+    padding: 8px;
+  }
+  #theButtons {
+    grid-template-columns: 0fr;
+    grid-row-gap: 1em;
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 390px) {
+  .theIMG {
+    width: 170px;
+  }
+
+  #theButtons {
+    grid-template-columns: 0fr;
+    grid-row-gap: 1em;
+    justify-self: end;
+  }
+  .name {
+    display: block;
+    width: 80px;
+  }
+
+  .wrapper {
+    grid-template-columns: 30% 70%;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 448px) {
+  .name {
+    display: block;
+    width: 80px;
+  }
+  .wrapper {
+    grid-template-columns: 25% 75%;
+  }
+  #theButtons {
+    grid-template-columns: 0fr;
+    grid-row-gap: 1em;
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 448px) and (max-width: 620px) {
+  .name {
+    display: block;
+    width: 80px;
+  }
+  .wrapper {
+    grid-template-columns: 20% 80%;
+  }
+  #theButtons {
+    grid-template-columns: 0fr;
+    grid-row-gap: 1em;
+    justify-self: end;
+  }
+  .popular {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 648px) {
+  #theButtons {
+    grid-row-gap: 1em;
+    justify-self: end;
+  }
+  .name {
+    margin-left: 0px;
+    display: block;
+    width: 80px;
+  }
+  .wrapper {
+    grid-template-columns: 15% 85%;
+  }
+}
+
+@media screen and (min-width: 648px) and (max-width: 999px) {
+  .name {
+    display: block;
+    margin: 0;
+  }
+  .wrapper {
+    grid-template-columns: 15% 85%;
+  }
+}
+
+@media screen and (min-width: 999px) and (max-width: 1200px) {
+  .name {
+    margin: 0;
+    display: block;
+    float: left;
+  }
+  .logo, .name {
+    margin-left: 25%;
+  }
+}
