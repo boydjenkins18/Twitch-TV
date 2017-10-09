@@ -2,6 +2,8 @@
 
 Check out the deployed project at https://frozen-atoll-84063.herokuapp.com/
 
+![Alt text](https://i.imgur.com/MzJCKGC.jpg "Twitch TV")
+
 This is an FCC project that I created where you can see the list of some of the popular twitch streamer status and you can toggle to see which ones are online or offline.
 
 #### Technologies I use to build this project:
